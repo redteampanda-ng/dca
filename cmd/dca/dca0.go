@@ -115,8 +115,11 @@ func encoder() {
 			return
 		}
 
+		// create an output buffer
+		opus := make([]byte, MaxBytes)
+
 		// try encoding pcm frame with Opus
-		opus, err := OpusEncoder.Encode(pcm, AudioFrameSize, MaxBytes)
+		opus, err := OpusEncoder.Encode(pcm, AudioFrameSize, opus)
 		if err != nil {
 			fmt.Println("Encoding Error:", err)
 			return
