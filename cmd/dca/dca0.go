@@ -10,7 +10,7 @@ import (
 	"os"
 	"sync"
 
-	"layeh.com/gopus"
+	"github.com/redteampanda-ng/gopus"
 )
 
 var (

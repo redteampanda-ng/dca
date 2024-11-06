@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"layeh.com/gopus"
+	"github.com/redteampanda-ng/gopus"
 )
 
 // Parse command line arguments and setup a couple of variables.
